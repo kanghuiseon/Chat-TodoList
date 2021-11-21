@@ -7,6 +7,6 @@
 
 import UIKit
 
-class TodayChatHeaderView: UICollectionReusableView {
+class TodayChatTodoHeaderView: UICollectionReusableView {
         
 }
