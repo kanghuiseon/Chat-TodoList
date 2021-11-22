@@ -8,8 +8,12 @@
 import UIKit
 
 class ChatTodoListCollectionViewController: UICollectionViewController {
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setNeedsStatusBarAppearanceUpdate()
         navigationController?.navigationBar.topItem?.titleView = setTitleView()
     }
     func setTitleView() -> UIView{
@@ -32,7 +36,7 @@ class ChatTodoListCollectionViewController: UICollectionViewController {
         secondView.addSubview(secondLabel)
         secondLabel.text = "Todo List"
         secondLabel.font = UIFont.systemFont(ofSize: UIFont.preferredFont(forTextStyle: .largeTitle).pointSize, weight: .bold)
-        secondLabel.textColor = .black
+        secondLabel.textColor = .white
         secondLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             secondLabel.leadingAnchor.constraint(equalTo: secondView.leadingAnchor),
