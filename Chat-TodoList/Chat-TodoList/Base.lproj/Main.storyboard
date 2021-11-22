@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,20 +17,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.10980392156862745" green="0.047058823529411764" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eA1-gb-qTG">
-                            <size key="itemSize" width="414" height="65"/>
+                            <size key="itemSize" width="414" height="66"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fY3-cQ-KRM">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChatTodoList" id="fY3-cQ-KRM" customClass="ChatTodoCollectionViewCell" customModule="Chat_TodoList" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gKg-H8-vXs">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBo-4g-3pd">
+                                            <rect key="frame" x="8" y="17" width="32" height="32"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="circle" catalog="system">
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="27"/>
+                                            </state>
+                                            <state key="selected" image="checkmark.circle" catalog="system">
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="27"/>
+                                            </state>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4O-br-Ge4">
+                                            <rect key="frame" x="50" y="13.5" width="85" height="39"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bR-eD-ToO">
+                                                    <rect key="frame" x="8" y="5" width="57" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="1bR-eD-ToO" secondAttribute="bottom" constant="5" id="Q0B-eS-Xbt"/>
+                                                <constraint firstAttribute="trailing" secondItem="1bR-eD-ToO" secondAttribute="trailing" constant="20" id="RKV-uc-7gu"/>
+                                                <constraint firstItem="1bR-eD-ToO" firstAttribute="leading" secondItem="L4O-br-Ge4" secondAttribute="leading" constant="8" id="VDE-p8-eGz"/>
+                                                <constraint firstItem="1bR-eD-ToO" firstAttribute="top" secondItem="L4O-br-Ge4" secondAttribute="top" constant="5" id="rDe-6S-eXE"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="L4O-br-Ge4" firstAttribute="centerY" secondItem="gKg-H8-vXs" secondAttribute="centerY" id="IQo-4G-HjR"/>
+                                        <constraint firstItem="eBo-4g-3pd" firstAttribute="top" secondItem="gKg-H8-vXs" secondAttribute="top" constant="17" id="Qn0-0w-mhL"/>
+                                        <constraint firstItem="eBo-4g-3pd" firstAttribute="centerY" secondItem="gKg-H8-vXs" secondAttribute="centerY" id="Zm6-te-W29"/>
+                                        <constraint firstItem="L4O-br-Ge4" firstAttribute="leading" secondItem="eBo-4g-3pd" secondAttribute="trailing" constant="10" id="bMX-G8-rqQ"/>
+                                        <constraint firstItem="eBo-4g-3pd" firstAttribute="leading" secondItem="gKg-H8-vXs" secondAttribute="leading" constant="8" id="j0A-zX-mhY"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
-                                <size key="customSize" width="414" height="65"/>
+                                <size key="customSize" width="414" height="66"/>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -62,4 +101,11 @@
             <point key="canvasLocation" x="337.68115942028987" y="56.919642857142854"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
