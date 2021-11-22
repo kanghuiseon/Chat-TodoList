@@ -18,7 +18,7 @@ class ChatTodoListCollectionViewController: UICollectionViewController {
         firstView.addSubview(firstLabel)
         firstLabel.text = "일반적인"
         firstLabel.font = UIFont.systemFont(ofSize: UIFont.preferredFont(forTextStyle: .largeTitle).pointSize, weight: .bold)
-        firstLabel.textColor = .blue
+        firstLabel.textColor = UIColor(hexString: "#C996CC")
         firstLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             firstLabel.leadingAnchor.constraint(equalTo: firstView.leadingAnchor),
