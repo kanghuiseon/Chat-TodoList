@@ -39,20 +39,59 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="714"/>
                                 <color key="backgroundColor" red="0.1411764771" green="0.098039209840000002" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0OY-16-xpg">
-                                    <size key="itemSize" width="116" height="128"/>
+                                    <size key="itemSize" width="414" height="93"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="c17-kn-Fw6">
-                                        <rect key="frame" x="0.0" y="0.0" width="116" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="R0d-Zj-9qH">
-                                            <rect key="frame" x="0.0" y="0.0" width="116" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qid-F7-NtB">
+                                                    <rect key="frame" x="19" y="27" width="39" height="39"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="circle" catalog="system">
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="33"/>
+                                                    </state>
+                                                    <state key="selected" image="checkmark.circle" catalog="system">
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="33"/>
+                                                    </state>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4m-2O-TWs">
+                                                    <rect key="frame" x="75" y="23.5" width="113" height="46"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvA-Oc-9Si">
+                                                            <rect key="frame" x="17" y="5" width="71" height="36"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="uvA-Oc-9Si" secondAttribute="bottom" constant="5" id="FLM-lK-QFH"/>
+                                                        <constraint firstItem="uvA-Oc-9Si" firstAttribute="centerY" secondItem="F4m-2O-TWs" secondAttribute="centerY" id="Yad-Et-BrW"/>
+                                                        <constraint firstItem="uvA-Oc-9Si" firstAttribute="leading" secondItem="F4m-2O-TWs" secondAttribute="leading" constant="17" id="eLI-Av-XB1"/>
+                                                        <constraint firstAttribute="trailing" secondItem="uvA-Oc-9Si" secondAttribute="trailing" constant="25" id="nOE-Iy-cHZ"/>
+                                                        <constraint firstItem="uvA-Oc-9Si" firstAttribute="top" secondItem="F4m-2O-TWs" secondAttribute="top" constant="5" id="tXo-uQ-g32"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="F4m-2O-TWs" firstAttribute="centerY" secondItem="R0d-Zj-9qH" secondAttribute="centerY" id="3Bu-5Y-Cip"/>
+                                                <constraint firstItem="qid-F7-NtB" firstAttribute="leading" secondItem="R0d-Zj-9qH" secondAttribute="leading" constant="19" id="KCe-EQ-eig"/>
+                                                <constraint firstItem="qid-F7-NtB" firstAttribute="centerY" secondItem="R0d-Zj-9qH" secondAttribute="centerY" id="Sas-aM-Z6U"/>
+                                                <constraint firstItem="F4m-2O-TWs" firstAttribute="leading" secondItem="qid-F7-NtB" secondAttribute="trailing" constant="17" id="Y4L-mW-Ycp"/>
+                                                <constraint firstItem="qid-F7-NtB" firstAttribute="top" secondItem="R0d-Zj-9qH" secondAttribute="top" constant="27" id="mTh-lH-uMi"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="116" height="128"/>
+                                        <size key="customSize" width="414" height="93"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -104,6 +143,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
+        <image name="circle" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
