@@ -4,6 +4,8 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,14 +34,79 @@
                     <view key="view" contentMode="scaleToFill" id="cqF-hk-GYN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4CZ-Ug-Bt1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="714"/>
+                                <color key="backgroundColor" red="0.1411764771" green="0.098039209840000002" blue="0.41568624970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0OY-16-xpg">
+                                    <size key="itemSize" width="116" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="c17-kn-Fw6">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="R0d-Zj-9qH">
+                                            <rect key="frame" x="0.0" y="0.0" width="116" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="116" height="128"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXL-1K-BAx">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QV-Cz-b36">
+                                        <rect key="frame" x="352.5" y="10" width="56.5" height="40.5"/>
+                                        <color key="tintColor" red="0.56862745100000001" green="0.41960784309999999" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="22" weight="bold"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ch-y4-K4T">
+                                        <rect key="frame" x="18" y="13" width="329.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="3Ch-y4-K4T" firstAttribute="centerY" secondItem="eXL-1K-BAx" secondAttribute="centerY" id="3ba-xa-Fgu"/>
+                                    <constraint firstAttribute="trailing" secondItem="3QV-Cz-b36" secondAttribute="trailing" constant="5" id="5i1-MS-gp0"/>
+                                    <constraint firstItem="3Ch-y4-K4T" firstAttribute="leading" secondItem="eXL-1K-BAx" secondAttribute="leading" constant="18" id="VDi-Kh-AWN"/>
+                                    <constraint firstAttribute="height" constant="60" id="eTk-Zh-tuM"/>
+                                    <constraint firstItem="3QV-Cz-b36" firstAttribute="leading" secondItem="3Ch-y4-K4T" secondAttribute="trailing" constant="5" id="ize-Vq-oYn"/>
+                                    <constraint firstItem="3QV-Cz-b36" firstAttribute="centerY" secondItem="eXL-1K-BAx" secondAttribute="centerY" id="xS0-Ov-86S"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RyN-4o-BXZ"/>
                         <color key="backgroundColor" red="0.10980392156862745" green="0.047058823529411764" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4CZ-Ug-Bt1" firstAttribute="top" secondItem="RyN-4o-BXZ" secondAttribute="top" id="EES-2C-mtV"/>
+                            <constraint firstItem="4CZ-Ug-Bt1" firstAttribute="leading" secondItem="RyN-4o-BXZ" secondAttribute="leading" id="Exn-CH-agL"/>
+                            <constraint firstItem="RyN-4o-BXZ" firstAttribute="trailing" secondItem="4CZ-Ug-Bt1" secondAttribute="trailing" id="MZ1-L4-PDO"/>
+                            <constraint firstItem="RyN-4o-BXZ" firstAttribute="bottom" secondItem="eXL-1K-BAx" secondAttribute="bottom" id="V7s-0F-Pj1"/>
+                            <constraint firstItem="eXL-1K-BAx" firstAttribute="leading" secondItem="RyN-4o-BXZ" secondAttribute="leading" id="eo8-fC-KNw"/>
+                            <constraint firstItem="eXL-1K-BAx" firstAttribute="top" secondItem="4CZ-Ug-Bt1" secondAttribute="bottom" id="poF-25-ze3"/>
+                            <constraint firstItem="RyN-4o-BXZ" firstAttribute="trailing" secondItem="eXL-1K-BAx" secondAttribute="trailing" id="u5j-QE-jC9"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tba-Sp-wrq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uwd-6x-TGv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1245" y="57"/>
+            <point key="canvasLocation" x="1244.9275362318842" y="56.919642857142854"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
