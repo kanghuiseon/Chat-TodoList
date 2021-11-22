@@ -20,7 +20,7 @@
 		25FB68C4274AB8870080F642 /* ChatTodoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB68C3274AB8870080F642 /* ChatTodoCollectionViewCell.swift */; };
 		25FB68C6274AB8930080F642 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB68C5274AB8930080F642 /* Section.swift */; };
 		25FB68C8274AB8D40080F642 /* TodayChatTodoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB68C7274AB8D40080F642 /* TodayChatTodoHeaderView.swift */; };
-		25FB68CA274AB9990080F642 /* ChatTodoListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB68C9274AB9990080F642 /* ChatTodoListCollectionViewController.swift */; };
+		25FB68CA274AB9990080F642 /* ChatTodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB68C9274AB9990080F642 /* ChatTodoListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 		25FB68C3274AB8870080F642 /* ChatTodoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTodoCollectionViewCell.swift; sourceTree = "<group>"; };
 		25FB68C5274AB8930080F642 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		25FB68C7274AB8D40080F642 /* TodayChatTodoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayChatTodoHeaderView.swift; sourceTree = "<group>"; };
-		25FB68C9274AB9990080F642 /* ChatTodoListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTodoListCollectionViewController.swift; sourceTree = "<group>"; };
+		25FB68C9274AB9990080F642 /* ChatTodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTodoListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 				25FB68C3274AB8870080F642 /* ChatTodoCollectionViewCell.swift */,
 				25FB68C5274AB8930080F642 /* Section.swift */,
 				25FB68C7274AB8D40080F642 /* TodayChatTodoHeaderView.swift */,
-				25FB68C9274AB9990080F642 /* ChatTodoListCollectionViewController.swift */,
+				25FB68C9274AB9990080F642 /* ChatTodoListViewController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 				25FB68C4274AB8870080F642 /* ChatTodoCollectionViewCell.swift in Sources */,
 				25FB68A9274AB6E60080F642 /* AppDelegate.swift in Sources */,
 				25FB68AB274AB6E60080F642 /* SceneDelegate.swift in Sources */,
-				25FB68CA274AB9990080F642 /* ChatTodoListCollectionViewController.swift in Sources */,
+				25FB68CA274AB9990080F642 /* ChatTodoListViewController.swift in Sources */,
 				25FB68C6274AB8930080F642 /* Section.swift in Sources */,
 				25171CED274C0C3B00CCC12D /* UIColor+extension.swift in Sources */,
 				25FB68C2274AB8490080F642 /* ChatTodoViewModel.swift in Sources */,

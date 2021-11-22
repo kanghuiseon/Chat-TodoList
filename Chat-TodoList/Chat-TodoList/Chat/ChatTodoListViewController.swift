@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChatTodoListCollectionViewController: UICollectionViewController {
+class ChatTodoListViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
