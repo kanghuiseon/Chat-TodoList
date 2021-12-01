@@ -99,7 +99,7 @@
                                 <rect key="frame" x="0.0" y="802" width="414" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QV-Cz-b36">
-                                        <rect key="frame" x="352.5" y="10" width="56.5" height="40.5"/>
+                                        <rect key="frame" x="352" y="9.5" width="57" height="41"/>
                                         <color key="tintColor" red="0.56862745100000001" green="0.41960784309999999" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
@@ -107,7 +107,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ch-y4-K4T">
-                                        <rect key="frame" x="18" y="13" width="329.5" height="34"/>
+                                        <rect key="frame" x="18" y="13" width="329" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>

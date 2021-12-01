@@ -6,7 +6,7 @@
 //
 
 import UIKit
-class ChatTodoModel{
-    
-    
+struct ChatTodoModel{
+    let isDone: Bool
+    let content: String  
 }
